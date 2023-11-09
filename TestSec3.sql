@@ -1,3 +1,4 @@
+--All queries of lesson 3 in orcale slides:
 select SYSDATE "Date" from dual;
 select employee_id, last_name, salary, round(salary + salary*(15.5/100),0) "New Salary"
 from employees;
