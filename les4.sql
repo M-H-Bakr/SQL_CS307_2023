@@ -2,7 +2,7 @@ select last_name || 'earns' || to_char(salary,'$99,999.00') || ' monthly but wan
 to_char(salary*3,'$99,999.00')||'.' "Dream Salaries"
 from employees;
 
-select last_name, hire_date, to_char(next_day(add_months(hire_date,6),'Monday'),'fmDay", the "Ddspth "of" Month"," YYYY') review
+select last_name, hire_date, to_char(next_day(add_months(hire_date, 6), 'Monday'), 'fmDay", the "Ddspth "of" Month"," YYYY') review
 from employees;
 
 select last_name, hire_date, to_char(hire_date, 'DAY')
