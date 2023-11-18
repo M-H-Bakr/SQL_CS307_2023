@@ -13,7 +13,7 @@ where substr(last_name,1,1) IN ('J', 'M', 'A') ;
 
 select initcap(last_name) "Name", Length(last_name) "Length"
 from employees
-where substr(last_name,1,1) = '&char' ;
+where substr(last_name,1,1) = upper('&char') ;
 
 select last_name, round(months_between(sysdate, hire_date),0) months_worked
 from employees
